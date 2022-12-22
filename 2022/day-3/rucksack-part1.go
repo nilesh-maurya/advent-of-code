@@ -45,7 +45,6 @@ func rucksackPart1() int {
 		commonStr := getCommonString(first, second)
 
 		priority := getPriority(commonStr)
-		// log.Println(priority)
 		score += priority
 	}
 	return score
@@ -61,6 +60,22 @@ func getPriority(str string) int {
 }
 
 func getCommonString(first, second string) string {
+
+	// result := viaLCSApproach(first, second)
+	// return result
+
+	for i := 0; i < len(first); i++ {
+		for j := 0; j < len(second); j++ {
+			if first[i] == second[j] {
+				return string(first[i])
+			}
+		}
+	}
+
+	return ""
+}
+
+func viaLCSApproach(first, second string) string {
 	var dp = make([][]int, len(first)+1)
 
 	for i := range dp {
@@ -103,9 +118,7 @@ func getCommonString(first, second string) string {
 		jMax--
 	}
 
-	result := string(tempRes)
-
-	return result
+	return string(tempRes)
 }
 
 func reverse(str string) string {
