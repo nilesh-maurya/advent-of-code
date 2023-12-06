@@ -10,7 +10,7 @@ func isNumeric(val byte) bool {
 	return err == nil
 }
 
-func CalculateCaliberation(scanner *bufio.Scanner) int {
+func CalculateCaliberationPartOne(scanner *bufio.Scanner) int {
 	ans := 0
 	for scanner.Scan() {
 		line := scanner.Text()
