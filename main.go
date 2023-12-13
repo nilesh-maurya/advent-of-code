@@ -12,6 +12,7 @@ import (
 	day5 "github.com/nilesh-maurya/advent-of-code/2023/day-5"
 	day6 "github.com/nilesh-maurya/advent-of-code/2023/day-6"
 	day7 "github.com/nilesh-maurya/advent-of-code/2023/day-7"
+	day8 "github.com/nilesh-maurya/advent-of-code/2023/day-8"
 	day9 "github.com/nilesh-maurya/advent-of-code/2023/day-9"
 )
 
@@ -36,6 +37,9 @@ func main() {
 
 	fmt.Printf("Day 7 - Part1: %d\n", TakeInput("./2023/day-7/input.txt", day7.CamelCardsPartOne))
 	fmt.Printf("Day 7 - Part2: %d\n\n", TakeInput("./2023/day-7/input.txt", day7.CamelCardsPartTwo))
+
+	fmt.Printf("Day 8 - Part1: %d\n", TakeInput("./2023/day-8/input.txt", day8.HauntedWastelandPartOne))
+	fmt.Printf("Day 8 - Part2: %d\n\n", TakeInput("./2023/day-8/input.txt", day8.HauntedWastelandPartTwo))
 
 	fmt.Printf("Day 9 - Part1: %d\n", TakeInput("./2023/day-9/input.txt", day9.MirageMaintenancePartOne))
 	fmt.Printf("Day 9 - Part2: %d\n", TakeInput("./2023/day-9/input.txt", day9.MirageMaintenancePartTwo))
